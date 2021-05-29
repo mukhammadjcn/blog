@@ -146,4 +146,10 @@
             width: 100%;
         }
     }
+
+    .social-links{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
