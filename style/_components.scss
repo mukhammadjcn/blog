@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+    font-family: 'Heebo', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+// Footer 
+.footer{
+    padding: 50px;
+    text-align: center;
+    .social-link__item{
+        margin: 16px;
+    }
+    
+    .social-link__item:nth-child(1):hover svg path{
+        fill: #1877F2;
+        transition: 0.5s ease;
+    }
+    .social-link__item:nth-child(2):hover svg path{
+        fill: url(#my-cool-gradient);
+        transition: 0.5s ease;
+    }
+    .social-link__item:nth-child(3):hover svg path{
+        fill: #1C9CEA;
+        transition: 0.5s ease;
+    }
+    .social-link__item:nth-child(4):hover svg path{
+        fill: #0270AD;
+        transition: 0.5s ease;
+    }
+    
+    .copyright{
+        font-size: 16px;
+        line-height: 23px;
+        color: #21243D;
+        margin-top: 26px;
+    }
+}
+
+// Hamburger menu header for mobile version of site
+.hamburger-menu{
+    padding: 16px;
+    text-align: end;
+    svg{
+        vertical-align: middle;
+    }
+}
+
+// short-post
+.mini-post{
+    padding: 24px 20px;
+    &__header{
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 38px;
+        color: #21243D;
+    }
+    &__snippet{
+        font-size: 18px;
+        line-height: 26px;
+        color: #21243D;
+        margin: 12px 0 16px;
+        .vr-line{
+            padding: 0 12px;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 23px;
+        color: #21243D;
+    }
+}
