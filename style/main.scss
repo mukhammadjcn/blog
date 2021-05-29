@@ -1,1 +1,139 @@
-@import "./components"
+@import "./components";
+
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 26px;
+}
+// Header
+.header{
+    text-align: right;
+   .navbar{
+    &-link{
+        margin: 12px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 29px;
+        color: #000000;
+        transition: 0.2s;
+
+        &:hover{
+            color: #FF6464;
+        }
+    }
+   } 
+   .hamburger-menu{
+       display: none;
+   }
+}
+
+
+// Intro
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 140px 0 70px;
+    &-information{
+        flex-basis: 50%;
+        &__title{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 60px;
+            color: #21243D;
+        }
+        &__paragraph{
+            font-size: 16px;
+            line-height: 23px;
+            color: #21243D;
+            margin: 36px 0;
+        }
+        .resume-btn{
+            font-weight: 500;
+            font-size: 20px;
+            color: #FFFFFF;
+            padding: 12px 18px;
+            background: #FF6464;
+            border-radius: 6px;
+            border: none;
+        }
+    }
+    &-img{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        img{
+            height: 100%;
+            border-radius: 50%;
+        }
+        svg{
+            position: absolute;
+            left: 0px;
+            bottom: -10px;
+            z-index: -1;
+        }
+    }
+}
+
+// Recent post
+.recent-posts{
+    background: #EDF7FA;
+    .container{
+        padding: 26px 0;
+        .recent-posts__title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                font-size: 16px;
+                line-height: 23px;
+                text-align: right;
+                color: #00A8CC;
+            }
+        }
+
+        .recent-posts__list{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .container{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .intro-information{
+        flex-basis: auto;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 698px) {
+    .navbar{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block !important;
+    }
+
+    .intro{
+        flex-direction: column-reverse;
+        gap: 32px;
+        text-align: center;
+        padding: 70px;
+    }
+    .recent-posts__list{
+        flex-direction: column;
+    }
+
+    
+    
+}
