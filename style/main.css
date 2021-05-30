@@ -164,6 +164,15 @@
   .portfolio-item .portfolio-img {
     width: 100%;
   }
+  .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .container {
@@ -322,7 +331,7 @@
             flex-direction: column-reverse;
     gap: 32px;
     text-align: center;
-    padding: 70px;
+    padding: 0 70px 70px;
   }
   .recent-posts__list {
     -webkit-box-orient: vertical;

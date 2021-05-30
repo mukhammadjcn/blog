@@ -128,11 +128,14 @@
         flex-direction: column-reverse;
         gap: 32px;
         text-align: center;
-        padding: 70px;
+        padding: 0 70px 70px;
+        
     }
     .recent-posts__list{
         flex-direction: column;
     }
+
+    
 
     
     
