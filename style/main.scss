@@ -135,6 +135,16 @@
         flex-direction: column;
     }
 
+    .header{
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        right: 0;
+        top: 0;
+        background: #fff;
+        z-index: 2;
+    }
+
     
 
     
